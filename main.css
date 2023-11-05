@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     line-height: 1.3;
@@ -77,6 +81,9 @@ html, body {
     letter-spacing: 4px;
     color: #202020;
 }
+.personname__block {
+    display: none;
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -106,6 +113,9 @@ html, body {
     position: relative;
     padding-bottom: 130%;
 }
+.me__photo img {
+    width: 80%;
+}
 .me__info {
     padding: 80px 0px 0px 0px;
     letter-spacing: 1px;
@@ -133,10 +143,35 @@ html, body {
 }
 
 .contact {
-    padding: 0px 0px 130px 0px;
+    padding: 0px 0px 130px 10px;
     position: relative;
 }
+.contact__block {
+    transition: 0.5s;
+    padding: 6px;
+    
+}
+.contact__block:hover {
+    transform: scale(1.01);
+}
+.contact__link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    letter-spacing: 3px;
+    color: #cdcdb8;
+}
+.contact__link img {
+    width: 50px;
+    padding: 0px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.contact__link a {
+    text-decoration: none;
+    color: #cdcdb8;
 
+}
 
 
 
@@ -173,6 +208,7 @@ html, body {
 }
 .education__medium-title {
     color: #752326;
+    
 
 }
 
@@ -198,9 +234,7 @@ html, body {
 }
 
 
-.content__skills {
-    padding: 0px 0px 0px 50px;
-}
+
 .skills__title {
     margin: 60px 0px 40px 0px;
     color: #752326;
@@ -210,8 +244,12 @@ html, body {
     font-size: 30px;
     position: relative;
 }
+.skills__name ul {
+    margin: 0;
+    padding: 0;
+}
 .skills ul li {
-    padding: 6px 0 6px 50px;
+    padding: 6px 0 6px 30px;
     background-image: url(./images/Circle_Brown_Solid.svg.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -247,11 +285,14 @@ html, body {
 }
 .footer__name {
     padding: 10px 5px 5px 5px;
+    font-size: 22px;
 }
 .footer__point {
     padding: 10px 5px 5px 5px;
+    font-size: 22px;
+
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 943px) {
 .header {
     width: 100%;
 }
@@ -262,6 +303,62 @@ html, body {
     font-size: 18px;
 }
 }
-@media screen and (max-width: 1150px) {
-
+@media screen and (max-width: 850px) {
+    .content__block {
+        flex-direction: column;
+    }
+    .me__photo {
+        margin: 230px -40px 0px 40px;
+        position: relative;
+        padding-bottom: 0;
+    }
+    .me__info {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .contact__block {
+        margin-left: 30px;
+    }
+    .content__box {
+        flex-direction: column;
+    }
+    .skills__name ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills__name li {
+        margin: 8px;
+    }
+    .experience {
+        margin-bottom: 150px;
+    }
+    .personname__dark.dark {
+     display: none;        
+ 
+    }
+    .personname__light.light {
+        display: none;        
+     }
+    .personname__block {
+        top: 115px;
+        left: 10%;
+        text-align: center;
+        position: absolute;
+        text-shadow: 1px 1px 2px #7054557d;
+        font-size: 44px;
+        z-index: 50;
+        letter-spacing: 4px;
+        color: #cdcdb8;
+        display: block;
+    }
+   
+}
+@media screen and (max-width: 850px) {
+    .footer__row {
+        flex-direction: column;
+    }
+    .personname__block {
+        font-size: 40px;
+    }
 }
