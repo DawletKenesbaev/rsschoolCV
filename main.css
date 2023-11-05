@@ -42,6 +42,79 @@ html, body {
 
 
 
+.personname__light.light {
+    top: 115px;
+    position: absolute;
+    right: 60%;
+    text-shadow: 1px 1px 2px #7054557d;
+    font-size: 44px;
+    z-index: 50;
+    letter-spacing: 4px;
+    color: #cdcdb8;
+
+}
+.personname__dark.dark {
+    top: 115px;
+    position: absolute;
+    left: 40%;
+    text-shadow: 1px 1px 2px #afacac86;
+    font-size: 44px;
+    letter-spacing: 4px;
+    z-index: 50;
+    letter-spacing: 4px;
+    color: #202020;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    min-height: 100%;
+}
+.content__block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.content__column1 {
+    flex: 1 0 40%;
+    background: #202020;
+    /* padding: 0px 40px 0px 40px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+.content__me {
+    flex: 1 1 auto;
+}
+.me__photo {
+    margin: 230px -40px 0px -40px;
+    position: relative;
+    padding-bottom: 130%;
+}
+.me__info {
+    padding: 80px 0px 0px 0px;
+    letter-spacing: 1px;
+}
+.contact {
+    padding: 0px 0px 130px 0px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.content__column2 {
+    flex: 1 0 60%;
+    padding: 0px 40px 0px 60px;
+    position: relative;
+}
 
 @media screen and (max-width: 1150px) {
 .header {
