@@ -5,8 +5,12 @@ html, body {
     color: rgb(32, 32, 32);
     font-weight: 400;
     font-family: lato;
+    padding: 0;
+    margin: 0;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -86,9 +90,10 @@ html, body {
 }
 .content__me {
     flex: 1 1 auto;
+    padding-left: 20px;
 }
 .me__photo {
-    margin: 230px -40px 0px -40px;
+    margin: 230px -40px 0px 40px;
     position: relative;
     padding-bottom: 130%;
 }
@@ -96,6 +101,28 @@ html, body {
     padding: 80px 0px 0px 0px;
     letter-spacing: 1px;
 }
+.title {
+    margin: 60px 0px 40px 0px;
+    color: #752326;
+    -webkit-text-fill-color: rgb(117, 35, 38);
+    letter-spacing: 15px;
+    text-shadow: 1px 1px 2px #967879;
+    font-size: 30px;
+    position: relative;
+}
+.subtitle {
+    color: #cdcdb8;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+}
+.me__info p {
+    padding: 10px 0px 50px 0px;
+    z-index: 70;
+    color:  #cdcdb8;
+    font-size: 22px;
+}
+
 .contact {
     padding: 0px 0px 130px 0px;
     position: relative;
@@ -111,9 +138,44 @@ html, body {
     padding: 0px 40px 0px 60px;
     position: relative;
 }
+.content__box {
+    display: flex;
+    padding-top: 20px;
+}
+.content__column3 {
+    flex: 1 1 60%;
+    padding: 0px 30px 0px 0px;
+}
 
 
 
+
+.content__column4 {
+    flex: 1 1 40%;
+}
+
+
+.content__skills {
+    padding: 0px 0px 0px 50px;
+}
+.skills__title {
+    margin: 60px 0px 40px 0px;
+    color: #752326;
+    -webkit-text-fill-color: rgb(117, 35, 38);
+    letter-spacing: 15px;
+    text-shadow: 1px 1px 2px #967879;
+    font-size: 30px;
+    position: relative;
+}
+.skills ul li {
+    padding: 6px 0 6px 50px;
+    background-image: url(./images/Circle_Brown_Solid.svg.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 23px;
+    list-style: none;
+    font-size: 22px;
+}
 
 
 .footer {
